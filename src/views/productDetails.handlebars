@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav class="bg-success p-3 navbar">
+            <h1>PRODUCTO: {{product.title}}</h1>
+            <a href="/carts/6467ef65e36657ed6111e4fd" class="p-3"><img src="../public/assets/cart-round-1170-svgrepo-com.svg" alt="cart" width="40"></a>
+        </nav>  
+    </div>
+
+    <div class="row">
+        {{#with product}}
+            <p><b>ID: </b>{{_id}}</p>
+            <p><b>NOMBRE: </b>{{title}}</p>
+            <p><b>DESCRIPCION: </b>{{description}}</p>
+            <p><b>CODIGO: </b>{{code}}</p>
+            <p><b>PRECIO: </b>{{price}}</p>
+            <p><b>STOCK: </b>{{stock}}</p>
+            <p><b>CATEGORIA: </b>{{category}}</p>
+        {{/with}}
+        <div>
+            <button id="eliminarProducto">ELIMINAR PRODUCTO</button>
+            <p>Solo el dueño del producto o admin puede eliminar.</p>       
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("eliminarProducto").addEventListener("click", () => {
+        eliminarProducto("{{product._id}}")
+    });
+
+    function eliminarProducto(pid) {
+        fetch(`/api/products/${pid}`, {
+            method: "DELETE"
+        })
+        .then(response => {
+            if(response.ok) {
+                return response.text()
+            } else {
+                throw new Error("Necesitas ser dueño del producto o admin para eliminarlo!")
+            }
+        })
+        .then(responseText => {
+            alert("Producto eliminado!")
+            window.location = "/"
+        })
+        .catch(err => {
+            console.log(err);
+            alert("Necesitas ser dueño del producto o admin para eliminarlo!")
+        })
+    }
+
+</script>

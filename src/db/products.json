@@ -1,0 +1,46 @@
+[
+  {
+    "id": 2,
+    "title": "Ryzen 7",
+    "description": "procesador amd",
+    "code": "ABC344",
+    "price": 50000,
+    "status": true,
+    "stock": 12,
+    "category": "componente",
+    "thumbnail": []
+  },
+  {
+    "id": 3,
+    "title": "Intel Core i5",
+    "description": "procesador intel",
+    "price": "65000",
+    "code": "ABB100",
+    "stock": "9",
+    "category": "componente",
+    "status": "True",
+    "thumbnail": []
+  },
+  {
+    "id": 4,
+    "title": "Intel Core i9",
+    "description": "procesador intel",
+    "price": "125000",
+    "code": "ABB200",
+    "stock": "6",
+    "category": "componente",
+    "thumbnail": "C:\\fakepath\\image.png",
+    "status": "True"
+  },
+  {
+    "id": 5,
+    "title": "Ryzen 3",
+    "description": "procesador amd",
+    "price": "70000",
+    "code": "ABC210",
+    "stock": "10",
+    "category": "componente",
+    "thumbnail": "",
+    "status": "True"
+  }
+]

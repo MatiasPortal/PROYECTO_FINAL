@@ -1,0 +1,456 @@
+{"level":"warn","message":"¡Alerta!"}
+{"level":"info","message":"¡Información!"}
+{"level":"error","message":"¡Error!"}
+{"level":"fatal","message":"¡Fatal!"}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"errorsDict is not defined"}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products-test validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\""}
+{"level":"error","message":"products-test validation failed: owner: Cast to ObjectId failed for value \"admin\" (type string) at path \"owner\" because of \"BSONError\", title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"products-test validation failed: title: Path `title` is required."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"payload is not defined"}
+{"level":"error","message":"allProducts is not defined"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"updateProd is not defined"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'id')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Error en la validación de datos."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"./views\""}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"./views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"../views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"./views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"/views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"C:\\Users\\Porta\\OneDrive\\Escritorio\\DESAFIOS BACKEND\\PROYECTO-FINAL\\src\\configs\\views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"C:\\Users\\Porta\\OneDrive\\Escritorio\\DESAFIOS BACKEND\\PROYECTO-FINAL\\src\\configs\\views\""}
+{"level":"error","message":"Failed to lookup view \"login\" in views directory \"C:\\Users\\Porta\\OneDrive\\Escritorio\\DESAFIOS BACKEND\\PROYECTO-FINAL\\src\\configs\\views\""}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"mongoose is not defined"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Parse error on line 5:\n...\r            {{#if !user.role=\"admin\"}}\n----------------------^\nExpecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'"}
+{"level":"error","message":"Missing helper: \"eq\""}
+{"level":"error","message":"Parse error on line 92:\n...Admin }\r\r</script>\n---------------------^\nExpecting 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', got 'EOF'"}
+{"level":"error","message":"Parse error on line 8:\n...\r            {{#if !isNotAdmin}}\r     \n----------------------^\nExpecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\DESAFIOS BACKEND\\PROYECTO-FINAL\\src\\public\\documents\\identifications\\identificacion-1694729752618.jpg'"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"Cannot read properties of undefined (reading 'role')"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No está autorizado para realizar esta acción."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"products validation failed: thumbnail: Path `thumbnail` is required."}
+{"level":"error","message":"products validation failed: thumbnail: Path `thumbnail` is required."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}

@@ -1,0 +1,72 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="bg-success p-3">
+            <h1>MI PERFIL</h1>
+        </header> 
+    </div>
+</div>
+<section class="vh-100" style="background-color: #f4f5f7;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-8 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+              <h5>{{user.firstName}} {{user.lastName}}</h5>
+              <p>Rol: {{user.role}}</p>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>Información de usuario</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Email</h6>
+                    <p class="text-muted">{{user.email}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Edad</h6>
+                    <p class="text-muted">{{user.age}}</p>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <h6>Id de usuario</h6>
+                    <p class="text-muted">{{user.id}}</p>
+                  </div>
+                </div>
+                <h6>Opciones</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-4 mb-3">
+                    <a href="/"><button type="button" class="btn btn-success">Productos</button></a>
+                  </div>
+                  <div class="col-4 mb-3">
+                    <a href="/carts/{{user.cart._id}}"><button type="button" class="btn btn-success">Mi carrito</button></a>
+                  </div>
+                  <div class="col-4 mb-3">
+                    <a href="/logout"><button type="button" class="btn btn-danger">Logout</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="/api/users/{{user.id}}/documents" method="POST" enctype="multipart/form-data">
+              <label for="identificacion">Identificación:</label>
+              <input type="file" name="identificacion" accept=".pdf, .jpg, .png"><br>
+
+              <label for="domicilio">Comprobante de domicilio:</label>
+              <input type="file" name="domicilio" accept=".pdf, .jpg, .png"><br>
+
+              <label for="statusDeCuenta">Comprobante de estado de cuenta:</label>
+              <input type="file" name="statusDeCuenta" accept=".pdf, .jpg, .png"><br>
+
+              <input type="submit" value="Subir documentos">
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
