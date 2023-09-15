@@ -166,7 +166,7 @@ export const purchaseProduct = async(req, res, next) => {
             throw new CustomError(errorsDict.VALIDATION_ERROR);
         }
 
-        res.status(200).send({ status: "ok", message: "Compra realizada", data: data });
+        res.render("purchase", { data })
     } catch(err) {
         next(err)
     }
