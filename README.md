@@ -1,4 +1,4 @@
-# DESAFIOS DE BACKEND CODERHOUSE
+# PROYECTO FINAL
 ## Comisión 51220 
 ## Proyecto final del curso de backend en CoderHouse.
 
