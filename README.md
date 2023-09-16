@@ -9,3 +9,7 @@ En este [link](https://github.com/MatiasPortal/DESAFIOS-BACKEND) se encuentran t
 npm run dev
 ```
 
+### Tarjeta de prueba al finalizar compra:
+```
+4000000320000021
+```
