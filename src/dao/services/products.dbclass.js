@@ -30,8 +30,8 @@ class ProductsDB {
 
         try {
             let products = await productModel.paginate(query, data);
-            let prevLink = `${config.APP_BASE}:${config.PUERTO}/?page=${products.prevPage}&limit=${products.limit}&sort=${sort}` || null
-            let nextLink = `${config.APP_BASE}:${config.PUERTO}/?page=${products.nextPage}&limit=${products.limit}&sort=${sort}` || null
+            let prevLink = `${config.APP_BASE}/?page=${products.prevPage}&limit=${products.limit}&sort=${sort}` || null
+            let nextLink = `${config.APP_BASE}/?page=${products.nextPage}&limit=${products.limit}&sort=${sort}` || null
 
             const productFind = () => {
                 if(Boolean(products.docs)) {

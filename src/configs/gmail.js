@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 // Email para recuperar contraseña.
 export const sendRecoveryPass = async (email, token) => {
-    const link = `${config.APP_BASE}:${config.PUERTO}/resetpassword/${token}`;
+    const link = `${config.APP_BASE}/resetpassword/${token}`;
     try {
         const res = await transporter.sendMail({
             from: config.GMAIL_ACCOUNT,
