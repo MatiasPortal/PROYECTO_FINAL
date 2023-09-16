@@ -1,0 +1,146 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="bg-success p-3">
+            <h1>PRODUCTOS EN TIEMPO REAL</h1>
+        </header> 
+    </div>
+    <div class="listContainer my-5">
+        <h3>LISTA DE PRODUCTOS:</h3>
+        <table class="productTable table">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th>Codigo</th>
+                <th>Stock</th>
+                <th>Owner ID</th>
+                </tr>
+                {{#each products}}
+                <tr>
+                    <td>{{this._id}}</td>
+                    <td>{{this.title}}</td>
+                    <td>{{this.description}}</td>
+                    <td>{{this.category}}</td>
+                    <td>${{this.price}}</td>
+                    <td>{{this.code}}</td>
+                    <td>{{this.stock}}</td>
+                    <td>{{this.owner}}</td>
+                </tr>
+                {{/each}}
+            </thead>
+        </table>
+    </div>
+
+    <div class="formsContainer">
+
+    <div class="m-5">
+        <h2>AGREGAR PRODUCTOS</h2>
+        <form id="addForm" class="form">
+
+            <label for="addTitle" class="formLabels"><b>Nombre</b></label>
+            <input type="text" id="addTitle" />
+
+            <label for="addDescription" class="formLabels"><b>Descripcion</b></label>
+            <input type="text" id="addDescription" />
+
+            <label for="addCategory" class="formLabels"><b>Categoria</b></label>
+            <input type="text" id="addCategory" />
+
+            <label for="addPrice" class="formLabels"><b>Precio</b></label>
+            <input type="number" id="addPrice" />
+
+            <label for="addCode" class="formLabels"><b>Codigo</b></label>
+            <input type="text" id="addCode" />
+
+            <label for="addStock" class="formLabels"><b>Stock</b></label>
+            <input type="number" id="addStock" />
+
+            {{!-- <label for="addOwner" class="formLabels"><b>Owner Id</b></label>
+            <input type="text" id="addOwner" /> --}}
+
+            <label for="addImage" class="formLabels"><b>Imagen</b></label>
+            <input type="file" id="addImage"/>
+
+            <button type="submit" id="addButton" class="mx-3">AGREGAR PRODUCTO</button>
+
+        </form>
+    </div>
+
+    <div class="m-5">
+        <h2>ELIMINAR PRODUCTOS</h2>
+
+        <form class="form">
+        <label for="title" class="formLabels">ID del Producto</label>
+        <input type="text" id="delId" />
+
+        <button type="submit" id="delButton">Eliminar</button>
+        </form>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+
+<script>
+    const ws = io("ws://localhost:8090");
+
+    const submitButton = document.getElementById("addButton");//btn agregar producto
+    const deleteButton = document.getElementById("delButton");//btn eliminar producto
+
+    const getId = () => {//Eliminar producto por id.
+        const idToDelete = document.getElementById("delId").value;
+        return idToDelete;
+    }
+
+    let productToAdd;
+
+    const getData = () => {//obtener valores del form.
+        const title = document.getElementById("addTitle").value;
+        const description = document.getElementById("addDescription").value;
+        const price = document.getElementById("addPrice").value;
+        const code = document.getElementById("addCode").value;
+        const stock = document.getElementById("addStock").value;
+        const category = document.getElementById("addCategory").value;
+        const owner = document.getElementById("addOwner").value:
+        const thumbnail = document.getElementById("addImage").value;
+
+    if(!(title == "" || description == "" || code == "" || price == "" || stock == "" || category == "")) {      
+        productToAdd = {
+            title: title,
+            description: description,
+            price: price,
+            code: code,
+            stock: stock,
+            category: category,
+            owner: owner,
+            thumbnail: thumbnail,
+        };
+
+        return productToAdd;
+
+    } else {
+        return alert("¡Debe completar todos los campos!");
+    }
+    }
+
+    ws.on("connect", () => {
+
+        ws.on("server_confirm", (msg) => {
+            console.log(msg);
+        });
+    });
+
+    submitButton.addEventListener("click", (e) => {
+        getData();
+        ws.emit("producto", productToAdd)
+    });
+
+    deleteButton.addEventListener("click", (e) => {
+        let id = getId();
+        console.log(`Producto con el id: ${id} eliminado`);
+        ws.emit("id", id);
+    })
+</script>

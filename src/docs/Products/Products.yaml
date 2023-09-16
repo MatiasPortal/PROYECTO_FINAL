@@ -1,0 +1,179 @@
+paths:
+  /api/products/:
+    get:
+      summary: Obtener lista de todos los productos.
+      tags:
+        - Products
+      responses:
+        "200":
+          description: "success"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Products"
+        "400":
+          description: "Error en la validación de datos."
+
+    post:
+      summary: Agregar nuevo producto.
+      tags:
+        - Products
+      requestBody:
+        required: true
+      responses:
+        "200":
+          description: "success"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/requestBodies/addProduct"
+        "400":
+          description: "Error en la validación de datos."
+        "404":
+          description: "Error 404 si el status del producto es error."
+
+  /api/products/{pid}:
+    get:
+      summary: Obtener producto por su ID.
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+      responses:
+        "200":
+          description: "success"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Products"
+        "404":
+          description: "No se encontró los datos solicitados."
+
+    put:
+      summary: Update de un producto por su ID.
+      tags:
+        - Products
+      parameters:
+        - name: uid
+          un: path
+          required: true
+      requestBody:
+        required: true
+      responses:
+        "200":
+          description: "success"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/requestBodies/updateProduct"
+        "400":
+          description: "Error en la validación de datos."
+
+    delete:
+      summary: Eliminar un producto por su ID.
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          un: path
+          description: ID DE PRODUCTO
+          required: true
+      responses:
+        "200":
+          description: "Producto eliminado"
+          content:
+            application/json:
+            schema:
+              $ref: "#/components/schemas/Products"
+        "403":
+          description: "No se pudo borrar este producto. (ser admin o premium del mismo producto)"
+        "404":
+          decription: "No se encontró los datos solicitados."
+
+components:
+  schemas:
+    Products:
+      type: object
+      properties:
+        _id:
+          type: object
+          description: Mongoose ObjectID
+        title:
+          type: string
+        description:
+          type: string
+        code:
+          type: string
+          description: CÓDIGO ÚNICO.
+        price:
+          type: number
+        status:
+          type: boolean
+        stock:
+          type: number
+        category:
+          type: string
+        owner:
+          type: Mongoose ObjectID
+          description: Por default admin si no se agrega owner.
+        thumbnail:
+          type: string
+          description: Imagen del producto.
+      example:
+        _id: 646aa89c206eb9bb5b330ee0
+        title: PNY NVIDIA RTX 3080 10GB
+        description: Placa de video RTX 3080 de 10gb.
+        code: GHB128
+        price: 350000
+        status: true
+        stock: 6
+        category: Placa de video
+        owner: 6491f9cea0b464b48ecf7bcb
+        thumbnail: nvidiartx3080.jpg
+
+  requestBodies:
+    addProduct:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        code:
+          type: string
+        price:
+          type: number
+        stock:
+          type: number
+        category:
+          type: string
+        owner:
+          type: Mongoose ObjectID
+        thumbnail:
+          type: string
+
+    updateProduct:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        code:
+          type: string
+        price:
+          type: number
+        stock:
+          type: number
+        category:
+          type: string
+        thumbnail:
+          type: string

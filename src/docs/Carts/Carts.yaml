@@ -1,0 +1,237 @@
+paths:
+  /api/carts/:
+    get:
+      summary: Obtener lista de todos los carritos.
+      tags:
+        - Carts
+      responses:
+        "200":
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Carts"
+        "503":
+          description: "Error en la base de datos."
+
+    post:
+      summary: Generar un carrito nuevo.
+      tags:
+        - Carts
+      responses:
+        "200":
+          description: "Carrito creado"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Carts"
+        "503":
+          description: "Error en la base de datos."
+
+  /api/cartdelete/:cid:
+    delete:
+      summary: Eliminar carrito.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+      responses:
+        "200":
+          description: "Carrito eliminado."
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Carts"
+        "400":
+          description: "Error en la validación de datos."
+
+  /api/carts/:cid/product/:pid:
+    post:
+      summary: Agregar producto al carrito.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto.
+      responses:
+        "200":
+          description: "Producto agregado al carrito."
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ProductInCart"
+        "400":
+          description: "Error en la validación de datos."
+        "404":
+          description: "No se encontró los datos solicitados."
+
+    put:
+      summary: Actualizar la cantidad de ejemplares del producto.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto.
+      requestBody:
+        required: true
+      responses:
+        "200":
+          description: "Producto actualizado."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/requestBodies/updateQuantityProducts"
+        "400":
+          description: "Error en la validación de datos."
+
+    delete:
+      summary: Borrar producto del carrito.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto.
+      responses:
+        "200":
+          description: "Producto eliminado del carrito."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Carts"
+        "400":
+          decription: "Error en la validación de datos."
+
+  /api/carts/:cid:
+    get:
+      summary: Obtener carrito por su id.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+      responses:
+        "200":
+          description: "Carrito encontrado."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Carts"
+        "404":
+          decription: "No está autorizado para realizar esta acción."
+
+    delete:
+      summary: Borrar todos los productos del carrito.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+      responses:
+        "200":
+          description: "Productos del carrito eliminado."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Carts"
+        "400":
+          description: "Error en la validación de datos."
+
+  /api/carts/:cid/purchase:
+    get:
+      summary: Finalizar proceso de compra.
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito.
+      responses:
+        "200":
+          description: "Compra realizada."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Carts"
+        "400":
+          description: "Error en la validación de datos."
+
+components:
+  schemas:
+    Carts:
+      type: object
+      properties:
+        _id:
+          type: object
+          description: ID del carrito (Mongoose ObjectID)
+        products:
+          type: array
+          items:
+            $ref: "#/components/schemas/ProductInCart"
+      example:
+        _id: 6467ef65e36657ed6111e4fd
+        products:
+          - product: "PNY NVIDIA RTX 3080 10GB"
+            _id: 646aa89c206eb9bb5b330ee0
+            quantity: 1
+
+    ProductInCart:
+      type: object
+      properties:
+        product:
+          type: string
+          description: Nombre del producto.
+        _id:
+          type: string
+          description: ID del producto (Mongoose ObjectID)
+        quantity:
+          type: integer
+          description: Cantidad del producto en el carrito.
+      example:
+        - product: "PNY NVIDIA RTX 3080 10GB"
+          _id: 646aa89c206eb9bb5b330ee0
+          quantity: 1
+
+  requestBodies:
+    updateQuantityProducts:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+            quantity:
+              type: integer
+              description: Nueva cantidad del producto en el carrito.

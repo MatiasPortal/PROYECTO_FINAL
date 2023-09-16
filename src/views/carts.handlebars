@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="bg-success p-3">
+            <h1>PRODUCTOS EN CARRITO</h1>
+        </header> 
+    </div>
+
+    <div class="row">
+        <table class="tableProducts">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Codigo</th>
+                    <th>Stock</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                </tr>
+                {{#each productsInCart}}
+                <tr>
+                    <td>{{this.product._id}}</td>
+                    <td>{{this.product.title}}</td>
+                    <td>{{this.product.description}}</td>
+                    <td>{{this.product.category}}</td>
+                    <td>$ {{this.product.price}}</td>
+                    <td>{{this.product.code}}</td>
+                    <td>{{this.product.stock}}</td>
+                    <td><span>{{this.quantity}}</span></td>
+                    <td><button id="deleteProduct" onclick="deleteProduct('{{this.product._id}}')" class="btn btn-danger">Borrar</button></td>
+                </tr>
+                {{/each}}
+            </thead>
+        </table>
+    </div>
+    <div class="d-flex mt-4 gap-2 mb-4">
+            <button id="checkout" class="btn btn-primary">FINALIZAR COMPRA</button>
+    </div>
+</div>
+
+{{!-- <script src="../public/js/cart.js"></script> --}}
+
+<script>
+
+const deleteButton = document.getElementById('deleteProduct');
+
+const deleteProduct = async (productId) => {
+    try {
+        const response = await fetch('/api/sessions/current');
+        const data = await response.json();
+        const cartId = data.payload.cart._id;
+        console.log(cartId);
+
+        const response2 = await fetch(`/api/carts/${cartId}/product/${productId}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        const data2 = await response2.json();
+        console.log(data2);
+        location.reload()
+    } catch(err) {
+        console.log(err)
+    }
+};
+
+const cartCheckOut = document.getElementById('checkout');
+
+cartCheckOut.addEventListener('click', async () => {
+    try {
+        const response = await fetch('/api/checkout', {
+            method: 'POST'
+        });
+        const data = await response.json()
+        console.log(data)
+        window.location.href = data.url
+        
+    } catch(err) {
+        console.log(err)
+    }
+});
+
+
+</script>

@@ -1,0 +1,65 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Rol</th>
+                <th>Eliminar Usuario</th>
+                <th>Cambiar Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+            <tr>
+                <td>{{this.firstName}}</td>
+                <td>{{this.lastName}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.role}}</td>
+                <td>
+                    <button id="deleteUser" onclick="deleteUser('{{this.id}}')">Eliminar usuario</button>
+                </td>
+                <td>
+                    <button id="changeRole" onclick="changeRole('{{this.id}}')">Cambiar rol</button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    const deleteButton = document.getElementById("deleteUser");
+    const changeButton = document.getElementById("changeRole");
+
+    const deleteUser = async(uid) => {
+        try {
+            const resp = await fetch(`/api/users/${uid}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await resp.json();
+            location.reload()
+        } catch(err) {
+            console.log(err)
+        }
+    };
+
+    const changeRole = async(uid) => {
+        try {
+            const resp = await fetch(`/api/users/premium/${uid}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await resp.json();
+            location.reload()
+        } catch(err) {
+            console.log(err)
+        }
+    };
+</script>
