@@ -161,14 +161,9 @@ export const purchaseProduct = async(req, res, next) => {
 
     try {
         const data = await cart.purchaseCart(cid, userEmail);
-
-        if(!data) {
-            throw new CustomError(errorsDict.VALIDATION_ERROR);
-        }
-
         res.render("purchase", { data })
     } catch(err) {
-        next(err)
+        throw err;
     }
 };
 
