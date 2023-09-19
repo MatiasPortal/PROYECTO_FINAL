@@ -25,7 +25,7 @@ class TicketClassDB {
 
     getTicketById = async(id) => {
         try {
-            const data = await ticketModel.findById({ '_id': new mongoose.Types.ObjectId(id) }).populate("products").lean()
+            const data = await ticketModel.findById(id).populate("products").lean()
             return data;
         } catch(err) {
             console.log("Error al obtener ticket por id" + err)
