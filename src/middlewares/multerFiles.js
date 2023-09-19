@@ -1,4 +1,5 @@
 import { __dirname } from "../configs/utils.js";
+import config from "../configs/config.js";
 import multer from "multer";
 import path from "path";
 
@@ -13,7 +14,7 @@ const docStorage = multer.diskStorage({
       };
   
       const folderName = folders[fieldname] || "others";
-      const dir = path.join(`../public/documents/${folderName}`);
+      const dir = path.join(`${config.APP_PATH}/public/documents/${folderName}`);
       cb(null, dir);
     },
     filename: function (req, file, cb) {
