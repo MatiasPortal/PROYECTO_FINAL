@@ -224,6 +224,8 @@ class CartsClassDB {
             const ticket = new TicketClassDB();
             const createTicket = await ticket.createTicket(newTicket);
 
+            console.log(newTicket)
+
     
             //GENERAR MAIL DE COMPRA.
             if(createTicket) {
