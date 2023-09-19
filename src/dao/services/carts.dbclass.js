@@ -29,11 +29,6 @@ class CartsClassDB {
     getCartById = async(cartId) => {
         try {
             const data = await cartModel.findById({ '_id': new mongoose.Types.ObjectId(cartId) }).lean().populate('products.product');
-
-            if(!data) {
-                throw new CustomError(errorsDict.VALIDATION_ERROR);
-            }
-
             return data;
         }catch(err) {
             console.log(err)
