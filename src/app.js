@@ -95,6 +95,8 @@ servidor.use("/api-docs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs))
 // Contenidos estáticos
 servidor.use("/public", express.static(`${__dirname}public`))
 
+console.log(`${__dirname}public`)
+
 // errores
 servidor.all("*", () => {
     throw new CustomError(errorsDict.NOT_FOUND_ERROR);
