@@ -252,10 +252,10 @@ class CartsClassDB {
                 return { ticket: newTicket, rejectedProducts: noPurchableProducts };
                      
             } else {
-                throw new CustomError(errorsDict.INTERNAL_ERROR);
+                console.log("No se pudo crear el ticket");
             }
         } catch(err) {
-            throw new CustomError(errorsDict.INTERNAL_ERROR);
+            console.log(err)
         }
     }
 }
