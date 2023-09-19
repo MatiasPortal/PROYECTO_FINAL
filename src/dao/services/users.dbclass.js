@@ -149,6 +149,31 @@ class UsersDB {
         }
     };
 
+    // Cambiar rol a admin.
+    changeRolToAdmin = async(id) => {
+        try {
+            const user = await userModel.findById(id).lean();
+
+            if(!user) {
+                throw new Error("No se encontrón el usuario")
+            };
+
+            if(user.role === "user" || user.role === "premium") {
+                user.role = "admin";
+                const updateUser = await userModel.findByIdAndUpdate(id, user, { new: true });
+                return updateUser;
+            } else if(user.role === "admin") {
+                user.role = "user";
+                const updateUser = await userModel.findByIdAndUpdate(id, user, { new: true });
+                return updateUser;
+            }
+
+            return user;
+        } catch(err) {
+            this.statusMsg = `changeRolToAdmin: ${err.message}`;
+        }
+    }
+
     // Enviar correo de recuperación de contraseña.
     forgotPassword = async(email) => {
         try {

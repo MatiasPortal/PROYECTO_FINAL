@@ -18,6 +18,7 @@ import productModel from './dao/models/products.model.js';
 import routerCart from "./routes/carts.routes.js";
 import routerMocking from "./routes/mocking.routes.js";
 import routerProducts from "./routes/products.routes.js";
+import routerTicket from "./routes/tickets.routes.js";
 import routerUser from "./routes/users.routes.js";
 import routerViews from "./routes/views.routes.js";
 import session from "express-session";
@@ -51,7 +52,7 @@ const swaggerOptions = {
              - [Repositorio de backend](https://github.com/MatiasPortal/DESAFIOS-BACKEND)`
         }
     },
-    apis: ["./docs/**/*.yaml"]
+    apis: [`${__dirname}docs/**/*.yaml`]
 }
 
 const specs = swaggerJsdoc(swaggerOptions);
@@ -81,10 +82,11 @@ servidor.use(passport.session())
 
 // endpoints
 servidor.use("/api", routerProducts);
-servidor.use("/api", routerMocking)
+servidor.use("/api", routerMocking);
 servidor.use("/api", routerCart);
-servidor.use("/api", routerUser)
-servidor.use("/api", paymentRouter)
+servidor.use("/api", routerUser);
+servidor.use("/api", paymentRouter);
+servidor.use("/api", routerTicket);
 servidor.use("/", routerViews(storeSession));
 servidor.use("/api/sessions", sessionRoutes());
 servidor.use("/api/loggerTest", loggerRouter);

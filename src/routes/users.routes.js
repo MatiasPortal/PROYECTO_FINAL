@@ -1,4 +1,4 @@
-import { changeRol, deleteInactiveUsers, deleteUser, forgotPassword, getUsers, resetPassword, updateUserDoc } from "../controllers/users.controller.js";
+import { changeRol, changeRolToAdmin, deleteInactiveUsers, deleteUser, forgotPassword, getUsers, resetPassword, updateUserDoc } from "../controllers/users.controller.js";
 import { validate, validateAdmin } from "../middlewares/validate.middleware.js";
 
 import { Router } from "express";
@@ -18,6 +18,9 @@ routerUser.delete("/users/:uid", validateAdmin, deleteUser);
 
 //Cambio de rol de usuario.
 routerUser.put("/users/premium/:uid", validateAdmin, changeRol);
+
+//Cambio de rol a admin.
+routerUser.put("/users/admin/:uid", validateAdmin, changeRolToAdmin);
 
 //Envio de email de recuperación de contraseña.
 routerUser.post("/forgotpassword", forgotPassword);

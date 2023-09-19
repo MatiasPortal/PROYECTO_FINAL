@@ -100,6 +100,19 @@ export const deleteProduct = async (req, res, next) => {
         const productToDelete = await product.getProductById(pid);
 
         if(productToDelete) {
+            if(req.user.role === "admin") {
+                await product.deleteProduct(pid);
+                const mail = transporter.sendMail({
+                    from: 'Ecommerce <portalmatias4@gmail.com>',
+                    to: req.user.email,
+                    subject: 'El producto ha sido eliminado',
+                    text: `¡Hola, el producto ${productToDelete.title} ha sido eliminado con éxito!`
+                })
+                return res.status(200).send("Producto eliminado");
+            }
+        }
+
+        if(productToDelete) {
             const productOwner = JSON.parse(JSON.stringify(productToDelete.owner));
             const userId = req.user._id;
 

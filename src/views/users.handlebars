@@ -21,12 +21,18 @@
                     <button id="deleteUser" onclick="deleteUser('{{this.id}}')">Eliminar usuario</button>
                 </td>
                 <td>
-                    <button id="changeRole" onclick="changeRole('{{this.id}}')">Cambiar rol</button>
+                    <button id="changeRole" onclick="changeRole('{{this.id}}')">Cambiar rol(user necesita docs para ser premium)</button>
+                </td>
+                <td>
+                    <button id="changeRole" onclick="changeRoleToAdmin('{{this.id}}')">Dar admin o quitar admin</button>
                 </td>
             </tr>
             {{/each}}
         </tbody>
     </table>
+</div>
+<div>
+    <h3 class="p-5">User debe enviar los documentos en el perfil para poder ser premium.</h3>
 </div>
 
 <script>
@@ -51,6 +57,22 @@
     const changeRole = async(uid) => {
         try {
             const resp = await fetch(`/api/users/premium/${uid}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await resp.json();
+            location.reload()
+        } catch(err) {
+            console.log(err)
+        }
+    };
+
+
+    const changeRoleToAdmin = async(uid) => {
+        try {
+            const resp = await fetch(`/api/users/admin/${uid}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

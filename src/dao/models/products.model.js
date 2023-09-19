@@ -13,7 +13,7 @@ const productSchema = new mongoose.Schema({
     status: { type: Boolean, default: true },
     stock: { type: Number, required: true },
     category: { type: String, required: true, index: true },
-    owner: { type: String, ref: "users" },
+    owner: { type: String, ref: "users", required: true, default: "admin" },
     thumbnail: { type: String, required: true },
 })
 

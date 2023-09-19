@@ -51,6 +51,18 @@ export const changeRol = async (req, res, next) => {
     }
 };
 
+// cambiar rol a admin.
+export const changeRolToAdmin = async (req, res, next) => {
+    const userId = req.params.uid;
+
+    try {
+        await user.changeRolToAdmin(userId);
+        res.send({ status: "success", message: "Rol actualizado" })
+    } catch(err) {
+        next(err)
+    }
+}
+
 // Enviar correo de recuperación de contraseña.
 export const forgotPassword = async (req, res, next) => {
     try {
