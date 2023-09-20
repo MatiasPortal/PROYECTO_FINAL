@@ -31,7 +31,7 @@ export const createSession = async(req, res) => {
             line_items: lineItems,
             mode: 'payment',
             success_url: `${config.APP_BASE}/api/carts/${cartId}/purchase`,
-            cancel_url: `${config.APP_BASE}/cancel`
+            cancel_url: `${config.APP_BASE}/api/cancel`
         })
 
         res.status(200).json({ url: session.url })

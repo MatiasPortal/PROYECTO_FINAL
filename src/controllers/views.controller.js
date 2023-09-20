@@ -167,6 +167,11 @@ export const listUsers = async (req, res) => {
     } catch(err) {
         return err;
     }
+};
+
+//cancelar compra.
+export const cancelPurchase = async (req, res) => {
+    res.render("cancelPurchase", {})
 }
 
 
