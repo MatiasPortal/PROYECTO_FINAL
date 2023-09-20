@@ -533,3 +533,5 @@
 {"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\src\\configs\\public\\documents\\identifications\\identificacion-1695170258807.jpg'"}
 {"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\public\\documents\\identifications\\identificacion-1695170861202.jpg'"}
 {"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\public\\documents\\identifications\\identificacion-1695171397697.jpg'"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\public\\documents\\identifications\\identificacion-1695171978931.jpg'"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\src\\public\\documents\\identifications\\identificacion-1695171992798.jpg'"}
