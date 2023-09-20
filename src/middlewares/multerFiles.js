@@ -14,7 +14,7 @@ const docStorage = multer.diskStorage({
       };
   
       const folderName = folders[fieldname] || "others";
-      const dir = path.resolve(__dirname, `public/documents/${folderName}`);
+      const dir = path.resolve(`${__dirname}/../public/documents/${folderName}`)
       cb(null, dir);
     },
     filename: function (req, file, cb) {
