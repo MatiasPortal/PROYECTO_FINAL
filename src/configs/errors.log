@@ -525,3 +525,9 @@
 {"level":"error","message":"No se encontró los datos solicitados."}
 {"level":"error","message":"No se encontró los datos solicitados."}
 {"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\public\\documents\\identifications\\identificacion-1695169638460.jpg'"}
+{"level":"error","message":"No se encontró los datos solicitados."}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\public\\documents\\identifications\\identificacion-1695169727753.jpg'"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\file:\\C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\src\\middlewares\\public\\documents\\identifications\\identificacion-1695169833429.jpg'"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'C:\\Users\\Porta\\OneDrive\\Escritorio\\CODERHOUSE\\PROYECTO-FINAL\\src\\configs\\public\\documents\\identifications\\identificacion-1695170258807.jpg'"}
